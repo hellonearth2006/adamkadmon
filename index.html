@@ -1,32 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Allah</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f9f9f9;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        img {
-            max-width: 90%;
-            height: auto;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4chan Style Board</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Allah</h1>
-    <img src="https://i.imgur.com/soua5LO.jpg" alt="Allah">
+    <div class="board-container">
+        <div class="post-container">
+            <!-- Post Header -->
+            <div class="post-header">
+                <span class="anonymous">Anonymous</span>
+                <span class="user-id">(ID: <span class="id-text">FIR79+q3</span>)</span>
+                <span class="post-date">05/17/25(Sat)10:57:52 No.33966790</span>
+            </div>
+            
+            <!-- Image Container -->
+            <div class="image-container">
+                <img id="post-image" 
+                     src="https://media.tenor.com/images/2c7e1c8f8b8a4c5d9e1f2a3b4c5d6e7f/tenor.gif" 
+                     alt="old-dick.gif" 
+                     class="post-image thumbnail"
+                     onclick="toggleImageSize()">
+                <div class="image-info">
+                    <span class="filename">old-dick.gif</span><br>
+                    <span class="filesize">116 KB GIF</span>
+                </div>
+            </div>
+            
+            <!-- Post Content -->
+            <div class="post-content">
+                <div class="field">
+                    <span class="label">&gt;Age</span><br>
+                    <span class="value">35</span>
+                </div>
+                
+                <div class="field">
+                    <span class="label">&gt;Sex</span><br>
+                    <span class="value">M</span>
+                </div>
+                
+                <div class="field">
+                    <span class="label">&gt;Location</span><br>
+                    <span class="value">US EST</span>
+                </div>
+                
+                <div class="field">
+                    <span class="label">&gt;NEET/Introvert/Shut-In?</span><br>
+                    <span class="value">Scopophobe</span>
+                </div>
+                
+                <div class="field">
+                    <span class="label">&gt;What are you looking for?</span><br>
+                    <span class="value">Bangmaid, fuckpet, stress toy IRL</span>
+                </div>
+                
+                <div class="field">
+                    <span class="label">&gt;Who do you want to add you?</span><br>
+                    <span class="value">Attractive women willing to travel/relocate/find a purpose</span>
+                </div>
+                
+                <div class="field">
+                    <span class="label">&gt;Contact info</span><br>
+                    <span class="value">Disc: clink.clink</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second post preview -->
+        <div class="post-container partial">
+            <div class="post-header">
+                <span class="anonymous">Anonymous</span>
+                <span class="user-id">(ID: <span class="id-text">8Em9Kyz4</span>)</span>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="board-footer">
+            <span class="board-url">🔒 boards.4chan.org</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
-
